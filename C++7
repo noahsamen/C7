@@ -1,0 +1,35 @@
+#include <iostream>
+
+int main() {
+  std::cout<<"Char ARRAY:";
+  char m[6] {'B','A','D','\0'};
+  char m2[9] {"PERSON"};
+  std::cout<<"\nMessage: "<<m;
+  std::cout<<"\nSizeof(m): "<<sizeof(m);
+  std::cout<<"\nMeesage2: "<<m2;
+  for(auto c:m){
+    std::cout<<c;    
+  }
+  m[1] = 'B';
+  std::cout<<"\nMessage Showcase: ";
+  for(auto c:m){
+    std::cout<<c;
+  }
+  //string literal
+  char m4 [] {"yo"};
+  std::cout<<"\nMessage: "<<m4;
+  std::cout<<"\n---------------";
+  std::cout<<"\nArray Bound";
+  int lol[] {1,2,3,5,6};
+  std::cout<<"\nlol value is:"<<lol[2];
+  lol[4] = 3111111; //If you put more then 4 in the array 
+  std::cout<<"\nNew lol value is: "<<lol[4];
+  std::cout<<"\n----------------";
+  std::cout<<"\nPointer";
+  int *p1 {};
+  double *p2 {};
+  int *p3{nullptr};
+  double *p4{nullptr};
+  int *p5 {}, p6{};
+  std::cout<<"\np1 Pointer: "<<p1<<" and the sizeof "<<sizeof(int);
+}
